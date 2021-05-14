@@ -1,10 +1,10 @@
 const express = require('express');
 const aws = require('aws-sdk');
 aws.config.update({
-    accessKeyId:'AKIAW4FKRDGQG2AV6DMS',
-    secretAccessKey:'Jfb9n4OJhT3pMpn2iTfnwzXRH18xU1ktwiaDacEl',
-    region:'us-east-2',
-    endpoint:'https://dynamodb.us-east-2.amazonaws.com'
+    accessKeyId:'<YOUR_ACCESS_KEY>',
+    secretAccessKey:'<YOUR_SECRET_KEY>',
+    region:'<REGION>',
+    endpoint:'https://dynamodb.<region>.amazonaws.com'
 });
 
 let port = process.env.PORT || 9070;
